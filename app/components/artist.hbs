@@ -1,0 +1,12 @@
+<article class="artist">
+    <div class="details">
+        <h3>{{@artist.name}}</h3>
+        <Artist::Image 
+            src=""
+            alt=""
+        />
+        <a href="{{@artist.external_urls.spotify}}" target="_blank" rel="noopener noreferrer">Listen</a>
+        <p>Followers: {{@artist.followers.total}}</p>
+        <p>Genres: {{@artist.genres}}</p>
+    </div>
+</article>

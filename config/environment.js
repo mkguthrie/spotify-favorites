@@ -47,5 +47,7 @@ module.exports = function (environment) {
     // here you can enable a production-specific feature
   }
 
+  ENV.SPOTIFY_ACCESS_TOKEN = 'BQAcWDUnAtnLqjM8uyJvrf4NyKVvGrlDDNO_14RFTDpms91HRkWIVajumR49AmC8umvs25lMtjiMOHqigDn6AuKqVNnibktqKPOPREjjnmpgGvmu3fWYQfL4zDI3SlJdg7rWzVoJS2mCn_BWJzA3hpWWbHJeBqzKEWSIyDZ2rHY';
+
   return ENV;
 };

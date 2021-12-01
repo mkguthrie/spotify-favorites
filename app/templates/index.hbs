@@ -1,0 +1,9 @@
+<h1>Hello World!</h1>
+
+<div class="spotify-wrap">
+    <ul class="results">
+        {{#each @model as |item|}}
+            <li><Artist @artist={{item}} /></li>
+        {{/each}}
+    </ul>
+</div>
