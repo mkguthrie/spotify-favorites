@@ -1,5 +1,6 @@
 <div class="intro">
-    <p>This is a quick application I built to get an understanding for the JavaSript framework, <a href="https://emberjs.com/" style="color:rgb(224, 78, 57);" target="_blank">Ember</a>. Below is a list of the 10 most played Spotify artists under my account.</p>
+    <p>This is a quick application I built to get an understanding for the JavaSript framework, <a href="https://emberjs.com/" style="color:rgb(224, 78, 57);" target="_blank" rel="noopener noreferrer">Ember</a>. Below is a list of the 10 most played Spotify artists under my account.</p>
+    <button class="button" {{action (action "toggleModal")}}>Suggest a Song!</button>
 </div>
 
 <div class="spotify">
@@ -7,3 +8,16 @@
         <Artist @artist={{artist}} />
     {{/each}}
 </div>
+
+{{#if isShowingModal}}
+  {{#modal-dialog
+      onClose=(action "toggleModal")
+      targetAttachment="center"
+      translucentOverlay=true
+  }}
+    <h2>Add form here.</h2>
+    <span>modal added with <a href="https://github.com/yapplabs/ember-modal-dialog#routable-usage" target="_blank">yapplabs/ember-modal-dialog</a> </span>
+  {{/modal-dialog}}
+{{/if}}
+
+

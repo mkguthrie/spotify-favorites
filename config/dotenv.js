@@ -4,12 +4,11 @@
 
 const path = require('path');
 
-module.exports = function(/* env */) {
+module.exports = function (/* env */) {
   return {
     clientAllowedKeys: ['SPOTIFY_ACCESS_TOKEN'],
     fastbootAllowedKeys: [],
     failOnMissingKey: false,
-    path: path.join(path.dirname(__dirname), '.env')
-  }
+    path: path.join(path.dirname(__dirname), '.env'),
+  };
 };
-

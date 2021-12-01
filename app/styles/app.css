@@ -1,4 +1,7 @@
+@import "ember-modal-dialog/ember-modal-structure.css";
+@import "ember-modal-dialog/ember-modal-appearance.css";
 @import url(https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap);
+
 
 /**
  * Base Elements
@@ -177,35 +180,30 @@ p {
   }
 }
 
- /* .artists-results .artist {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/**
+ * Suggestion Modal
+ */
+ .ember-modal-dialog {
+   width: 90%;
+   height: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .ember-modal-dialog h2 {
+   font-size: 5em;
+   line-height: 1;
+    text-align: center;
  }
 
-.artists-results li {
-  list-style: none;
-  margin-bottom: 25px;
+ .ember-modal-dialog span {
+  position: absolute;
+  bottom: 10px;
 }
 
-.artists-results li .details {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 3px;
-  box-shadow: 0 0 5px #b1b1b1;
-  padding: 20px;
-}
-
-.artists-results li .details .image img {
-  width: 200px;
-  height: 200px;
-}
-
-@media screen and (min-width: 778px) {
-  .artists-results {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+ @media screen and (min-width: 778px) {
+  .ember-modal-dialog {
+    width: 60%;
+    height: 50%;
   }
-} */
+}

@@ -17,16 +17,12 @@ export default class IndexRoute extends Route {
     // let { items } = await response.json();
     //   console.log(items)
     // return items;
-    
+
     // }
     let response = await fetch('/api/spotify.json');
 
     let { items } = await response.json();
-      console.log(items)
+    console.log(items);
     return items;
-    
-    }
+  }
 }
-
-
-
