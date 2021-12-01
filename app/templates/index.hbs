@@ -1,9 +1,9 @@
-<h1>Hello World!</h1>
+<div class="intro">
+    <p>This is a quick application I built to get an understanding for the JavaSript framework, <a href="https://emberjs.com/" style="color:rgb(224, 78, 57);" target="_blank">Ember</a>. Below is a list of the 10 most played Spotify artists under my account.</p>
+</div>
 
 <div class="spotify">
-    
     {{#each @model as |artist|}}
         <Artist @artist={{artist}} />
     {{/each}}
-    
 </div>
