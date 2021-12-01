@@ -54,17 +54,18 @@ p {
   padding: 10px 30px 10px;
   text-decoration: none;
   color: #000;
-  background: #1DB954;
+  background: rgb(224, 78, 57);
   border-radius: 5px;
   border: none;
   font-size: 20px;
   font-weight: bold;
-  opacity: 0.9;
+  opacity: 1;
   display: inline-block;
+  cursor: pointer;
 }
 
 .button:hover {
-  opacity: 1;
+  opacity: .8;
 }
 
 /**
@@ -87,7 +88,7 @@ p {
     height: 6em;
     border-bottom: 2px solid #f9f9f9;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
  }
 
@@ -96,19 +97,19 @@ p {
     color: #000;
     font-size: 1.4em;
     line-height: .5;
+    
   }
 
   .menu h1 span{
-    color: #1DB954;
-    display: block;
+    color: rgb(224, 78, 57);
   }
   
-  .menu a {
+  /* .menu a {
     text-decoration: none;
     padding: 0 15px;
     color: #000;
     font-size: 20px;
-  }
+  } */
 
 /**
  * Intro
@@ -119,11 +120,16 @@ p {
   max-width: 800px;
   font-size: 25px;
   margin: 2em auto;
+  
+}
+
+.intro a {
+  text-decoration: underline;
 }
 
 .intro a:hover {
   opacity: .7;
-  text-decoration: underline;
+  
 }
 
 
